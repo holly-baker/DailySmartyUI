@@ -45,12 +45,6 @@ body {
     justify-content: center;
 }
 
-@mixin default-page-layout {
-    height: 100vh;
-    width: 66vw;
-    display: grid;
-    align-content: space-around;
-}
 .logo-main,
 .recent-posts
     {
@@ -70,7 +64,10 @@ $color-gray-one: #666666;
 $color-gray-two: #b3b3b3;
 $color-blue-one: #0079ff;
 
+@import './mixins.scss';
+
 @import './searchbar.scss';
 @import './recent-posts.scss';
+@import './post';
 @import './home.scss';
 @import './results.scss';
