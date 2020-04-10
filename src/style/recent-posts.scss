@@ -1,4 +1,3 @@
-  
 .recent-posts {
     display: grid;
     align-content: center;
@@ -15,8 +14,11 @@
         }
         .recent-posts__posts {
             display: grid;
-            justify-content: space-evenly;
-            grid-template-columns: 1fr 1fr 1fr;
+            // justify-content: space-evenly;
+            // grid-template-columns: 1fr 1fr 1fr;
+            @media screen and (min-width: 700px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
             grid-gap: 42px;
         }    
     }
